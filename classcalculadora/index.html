@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Calculadora</title>
+    <meta charset="utf-8" lang="pt-br">
+    <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <p id="memoria"></p>
+        <p id="resultado"></p>        
+            <table>
+                <tr>
+                    <th colspan="3" class="cinza" onclick="ac()">AC</th>
+                    <th class="operador" onclick="sinal('dividir')">/</th>
+                </tr>
+                <tr>
+                    <td class="numero" onclick="numero(7)">7</td>
+                    <td class="numero" onclick="numero(8)">8</td>
+                    <td class="numero" onclick="numero(9)">9</td>
+                    <td class="operador" onclick="sinal('vezes')">X</td>
+                </tr>
+                <tr>
+                    <td class="numero" onclick="numero(4)">4</td>
+                    <td class="numero" onclick="numero(5)">5</td>
+                    <td class="numero" onclick="numero(6)">6</td>
+                    <td class="operador" onclick="sinal('menos')">-</td>
+                </tr>
+                <tr>
+                    <td class="numero" onclick="numero(1)">1</td>
+                    <td class="numero" onclick="numero(2)">2</td>
+                    <td class="numero" onclick="numero(3)">3</td>
+                    <td class="operador" onclick="sinal('soma')">+</td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="numero" onclick="numero(0)">0</td>
+                    <td class="virgula" onclick="numero('.')">,</td>
+                    <td class="igual" onclick="resultado()">=</td>
+                </tr>
+            </table>
+        <script src="classcalc.js"></script>
+    </body>
+</html>
